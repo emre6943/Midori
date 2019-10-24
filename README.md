@@ -1,3 +1,6 @@
+# How to set it up and videos
+Guide - https://www.youtube.com/watch?v=HxZZ_SeHZiQ
+Overview - https://www.youtube.com/watch?v=Nw3q85377LE&t=1s
 # A quick introduction to our app...
 This is gr33n, an app that makes aiding the environment more fun. Our goal with this app is to make helping our world enjoyable, and socially interactive. 
 
