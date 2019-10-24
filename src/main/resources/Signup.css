@@ -1,0 +1,24 @@
+#WrongInput{
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: red;
+}
+
+#WrongInputText{
+    -fx-text-fill: red;
+}
+
+#minButton{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-color: #9dff15;
+}
+
+#closeButton{
+    -fx-font-size: 24px;
+    -fx-color: #9dff15;
+}
+
+.jfx-button:hover{
+    -fx-background-color: lightgrey;
+}

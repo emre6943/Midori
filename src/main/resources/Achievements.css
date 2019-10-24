@@ -1,0 +1,12 @@
+#LockedAchievement{
+    -fx-background-color: gainsboro;
+}
+
+#UnlockedAchievement{
+    -fx-background-color: greenyellow;
+}
+
+#LW{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}

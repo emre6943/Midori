@@ -1,0 +1,12 @@
+.button:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+.label:hover {
+    -fx-text-fill: #fff715;
+}
+
+.jfx-hamburger:hover StackPane {
+    -fx-background-color: rgb(41, 41, 41);
+}
+

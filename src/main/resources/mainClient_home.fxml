@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchor" prefHeight="550.0" prefWidth="440.0" style="-fx-background-color: #000000;"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.Controller">
+    <children>
+        <VBox fx:id="home_vbox" layoutX="20.0" layoutY="59.0" prefHeight="490.0" prefWidth="400.0">
+            <children>
+                <AnchorPane prefHeight="85.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                    <children>
+                        <JFXButton fx:id="vegan_button" layoutX="314.0" onAction="#loadEntries" prefHeight="85.0"
+                                   prefWidth="85.0" style="-fx-background-color: #9dff15;" text=" "/>
+                        <Label layoutX="110.0" layoutY="32.0" text="Eat a vegan meal">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <JFXDrawer fx:id="drawer" defaultDrawerSize="205.0" layoutX="-3.0" prefHeight="550.0" prefWidth="205.0"/>
+        <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="14.0" onMouseClicked="#openDrawer" prefHeight="40.0"
+                      prefWidth="40.0" style="-fx-background-color: #9dff15;" stylesheets="@stylesheet.css"/>
+        <Label fx:id="closeButton" layoutX="414.0" onMouseClicked="#closeWindow" stylesheets="@stylesheet.css" text="x"
+               textFill="#9dff15">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="minButton" layoutX="387.0" layoutY="-4.0" onMouseClicked="#minimizeWindow"
+               stylesheets="@stylesheet.css" text="_" textFill="#9dff15">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

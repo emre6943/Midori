@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+      prefWidth="205.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="gui.Controller">
+    <children>
+        <ImageView fitHeight="165.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../Users/dan/Pictures/Pics/feel_good.jpg"/>
+            </image>
+        </ImageView>
+        <JFXButton fx:id="home_button" layoutX="10.0" layoutY="126.0" onMouseClicked="#gotoHome" prefHeight="77.0"
+                   prefWidth="205.0" stylesheets="@stylesheet.css" text="Home"/>
+        <JFXButton fx:id="new_entry_button" layoutX="10.0" layoutY="126.0" onMouseClicked="#gotoNewEntry"
+                   prefHeight="77.0" prefWidth="205.0" stylesheets="@stylesheet.css" text="New Entry"/>
+        <JFXButton layoutX="10.0" layoutY="204.0" prefHeight="77.0" prefWidth="205.0" stylesheets="@stylesheet.css"
+                   text="Achievements"/>
+        <JFXButton layoutX="10.0" layoutY="281.0" prefHeight="77.0" prefWidth="205.0" stylesheets="@stylesheet.css"
+                   text="Leaderboard"/>
+        <JFXButton layoutX="10.0" layoutY="359.0" prefHeight="77.0" prefWidth="205.0" stylesheets="@stylesheet.css"
+                   text="Add Friends"/>
+        <JFXButton layoutX="10.0" layoutY="436.0" prefHeight="77.0" prefWidth="205.0" stylesheets="@stylesheet.css"
+                   text="Settings"/>
+    </children>
+</VBox>

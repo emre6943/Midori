@@ -1,0 +1,81 @@
+#Anchor{
+    -fx-background-color: white;
+}
+
+#Hamburger{
+    -fx-background-color: greenyellow;
+}
+
+.jfx-button:hover{
+    -fx-background-color: lightgrey;
+}
+
+.jfx-button{
+    -fx-background-color: whitesmoke;
+}
+
+#closeButton{
+    -fx-font-size: 24px;
+}
+
+#minButton{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+#WrongInput{
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: red;
+}
+
+#WrongInputText{
+    -fx-text-fill: red;
+}
+
+#declineButton{
+    -fx-background-color: red;
+}
+
+#acceptButton{
+    -fx-background-color: greenyellow;
+}
+
+#overlay{
+    -fx-opacity: 0;
+}
+
+#darkTheme{
+    -fx-background-color: grey;
+}
+
+#darkButton:hover{
+    -fx-background-color: silver;
+}
+
+#darkAchived{
+    -fx-background-color: greenyellow;
+}
+
+#darkButton{
+    -fx-background-color: darkgrey;
+}
+
+#darkHamburger{
+    -fx-background-color: #007e19;
+}
+
+#popup{
+    -fx-background-color: greenyellow;
+}
+
+#credits{
+    -fx-font-size: 10;
+}
+
+#Sidepanel{
+    -fx-background-color: white;
+}
+
+
+

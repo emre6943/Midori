@@ -1,0 +1,39 @@
+image: maven:latest
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - export DOCKER_VERSION=$(echo "$CI_BUILD_REF" | cut -c 1-6)
+
+test:
+  stage: test
+  script: # TODO: write a test script
+    - exit 0
+    - mvn $MAVEN_CLI_OPTS test
+  dependencies:
+    - build
+
+deploy_dev:
+  stage: deploy
+  environment:
+    name: Dev
+  image: alpine
+  script:
+    - apk add --no-cache curl
+    # If no error, connection to the cluster from the pipeline script is OK
+    # TODO: write a deploy script
+  dependencies:
+    - test
+

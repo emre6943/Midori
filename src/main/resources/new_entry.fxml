@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #000;"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.ControllerMain">
+    <children>
+        <JFXButton fx:id="food_button" layoutX="50.0" layoutY="116.0" prefHeight="75.0" prefWidth="300.0"
+                   style="-fx-background-color: #fff;" text="Food"/>
+        <JFXButton fx:id="trans_button" layoutX="50.0" layoutY="195.0" prefHeight="75.0" prefWidth="300.0"
+                   style="-fx-background-color: #fff;" text="Transport"/>
+        <JFXButton fx:id="energy_button" layoutX="50.0" layoutY="274.0" prefHeight="75.0" prefWidth="300.0"
+                   style="-fx-background-color: #fff;" text="Energy"/>
+    </children>
+</AnchorPane>
